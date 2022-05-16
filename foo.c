@@ -18,7 +18,7 @@ int summing(int x, int y) {
  * @param y Vector summed to x.
  * @param len length of the vector.
  */
-int* sum_vectors(int* x, int* y, int len) {
+void sum_vectors(int* x, int* y, int len) {
     for (int i = 0; i < len; i++) {
         x[i] += y[i];
     }
