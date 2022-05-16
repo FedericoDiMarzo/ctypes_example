@@ -24,8 +24,8 @@ def setup_types(lib):
     lib.summing.restype = ctypes.c_int
 
     lib.sum_vectors.argtypes = (
-        np.ctypeslib.ndpointer(dtype=int, ndim=1, flags='C_CONTIGUOUS'),
-        np.ctypeslib.ndpointer(dtype=int, ndim=1, flags='C_CONTIGUOUS'),
+        np.ctypeslib.ndpointer(dtype=int, ndim=1),
+        np.ctypeslib.ndpointer(dtype=int, ndim=1),
         ctypes.c_int
     )
 
